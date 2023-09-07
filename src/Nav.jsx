@@ -10,7 +10,7 @@ const Navigation = ({handleSearch}) => {
     position: "sticky",
     top: 0,
     left : 0,
-    
+    width : "100%",
     zIndex: 1,
     display: "flex",
     justifyContent: "space-between",
@@ -60,6 +60,7 @@ const Navigation = ({handleSearch}) => {
   const searchContainerStyle = {
     display: "flex",
     alignItems: "center",
+
   };
 
   const searchInputStyle = {
@@ -104,25 +105,10 @@ const handleChange = () => {
         onClick={()=> navigate('/')}
         />
       </div>
-      <div style={categoriesStyle}>
-        <div style={dropdownStyle}>
-          <button style={dropbtnStyle} onClick={toggleDropdown}>
-            Categories
-          </button>
-          <div style={dropdownContentStyle}>
-            <a style={dropdownLinkStyle} href="#">
-              Category 1
-            </a>
-            <a style={dropdownLinkStyle} href="#">
-              Category 2
-            </a>
-            <a style={dropdownLinkStyle} href="#">
-              Category 3
-            </a>
-          </div>
-        </div>
-      </div>
-      <div style={searchContainerStyle}>
+      
+      <div style={searchContainerStyle} 
+      className="search-container"
+      >
         <input
           type="text"
           placeholder="Search..."
