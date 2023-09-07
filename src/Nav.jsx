@@ -101,7 +101,7 @@ const handleChange = () => {
   return (
     <nav style={navStyle} className="navbar">
       <div style={logoStyle}>
-        <img src="logo.png" alt="Logo" 
+        <img src="logo.png" alt="bhabhidesi" 
         onClick={()=> navigate('/')}
         />
       </div>
