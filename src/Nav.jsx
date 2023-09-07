@@ -10,7 +10,7 @@ const Navigation = ({handleSearch}) => {
     position: "sticky",
     top: 0,
     left : 0,
-    width : "100%",
+   
     zIndex: 1,
     display: "flex",
     justifyContent: "space-between",
@@ -99,7 +99,7 @@ const handleChange = () => {
     }
 
   return (
-    <nav style={navStyle}>
+    <nav style={navStyle} className="navbar">
       <div style={logoStyle}>
         <img src="logo.png" alt="Logo" 
         onClick={()=> navigate('/')}

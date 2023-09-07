@@ -242,6 +242,10 @@ button .search-button:hover{
   object-fit: cover;
   
  }
+
+ .navbar{
+   width: 100%;
+ }
   .video {
     flex-basis: 100%;
     
