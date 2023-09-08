@@ -4,12 +4,14 @@ import ApiComponent from "./ApiComponent";
 import { Link } from "react-router-dom";
 import Nav from "./Nav";
 import tag from "./Tag";
+import App from "./App";
 
 const Videoplayer = () => {
   const location = useLocation();
   const videoData = location.state;
   const [fetchedData, setFetchedData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const [searchTerm, setSearchTerm] = useState("");
   const videosPerPage = 9; // Number of videos to display per page
   const iframeRef = useRef(null); // Create a ref for the iframe element
 
@@ -51,10 +53,16 @@ const Videoplayer = () => {
       iframeRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const handleSearch = (term) => {
+    const searchUrl = `https://lust.scathach.id/Xvideos/search?key=${term}&page=1`;
+    setSearchTerm(searchUrl);
+  };
 
   return (
     <>
-      <Nav />
+    {searchTerm ? <App search={searchTerm} /> :
+    <>
+      <Nav handleSearch={handleSearch}/>
       <div style={vidCont}>
         {/* Fullscreen iframe with inline style */}
         <iframe
@@ -117,6 +125,8 @@ const Videoplayer = () => {
           </button>
         )}
       </div>
+      </>
+    }
     </>
   );
 };

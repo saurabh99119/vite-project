@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import ApiComponent from './ApiComponent';
 import Nav from './Nav';
 
-function App() {
+function App({search}) {
   const [fetchedData, setFetchedData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [currentData, setCurrentData] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState(search);
   const [btndisable,setbtndisable] = useState(false);
   const pageSize = 16;
 let nextPageNumber = 1;
@@ -72,6 +72,18 @@ let nextPageNumber = 1;
   return (
     <>
       <Nav handleSearch={handleSearch} />
+      <iframe
+      style={{ backgroundColor: 'white' }}
+      width="160"
+      height="600"
+      scrolling="no"
+      frameBorder="0"
+      allowTransparency="true"
+      marginHeight="0"
+      marginWidth="0"
+      name="spot_id_10002485"
+      src="//a.adtng.com/get/10002485?ata=mahabali_kush"
+    ></iframe>
       <div className='main'>
         <ApiComponent apiUrl={searchTerm ? searchTerm : "https://lust.scathach.id/Xvideos/search?key=milf&page=1"} onDataFetched={onDataFetched} />
         <div className='video-container'>
