@@ -10,18 +10,22 @@ const Navigation = ({handleSearch}) => {
     position: "sticky",
     top: 0,
     left : 0,
-   
+     
     zIndex: 1,
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
     padding: "10px 20px",
-    backgroundColor: "#1A1A1D",
+    backgroundColor: "linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)",
     color: "white",
   };
 
   const logoStyle = {
     maxWidth: "100px",
+    color: "red",
+    fontSize: "20px",
+    textAlign: "center",
+    margin: "10px"
   };
 
   const categoriesStyle = {
