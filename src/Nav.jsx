@@ -10,13 +10,13 @@ const Navigation = ({handleSearch}) => {
     position: "sticky",
     top: 0,
     left : 0,
-     
+     height:"100px",
     zIndex: 1,
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
     padding: "10px 20px",
-    backgroundColor: "#808080",
+    backgroundColor: "#2b2e2c",
     color: "white",
   };
 
@@ -80,7 +80,7 @@ const Navigation = ({handleSearch}) => {
   };
 
   const searchButtonStyle = {
-    backgroundColor: "#6f2232",
+    backgroundColor: "#F08080",
     color: "4e4e50",
     border: "none",
     padding: "5px 15px",

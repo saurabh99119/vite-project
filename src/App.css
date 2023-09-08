@@ -14,7 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+  background-color: black;
 }
 .logo {
   height: 6em;
@@ -71,8 +71,8 @@ img{
 
 .video{
   position: relative;
-  flex-basis: 35%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
   
 }
 .video-player{
@@ -95,8 +95,10 @@ img{
 }
 
 .video-thumb {
+ height:200px;
+ width:300px;
  
-  width: 100%; /* Ensure the image fills the container */
+   
 }
 
 .duration {
@@ -113,14 +115,14 @@ img{
   /* background-color: hsla(0, 0%, 67%, 0.164);
   color: rgb(206, 0, 0);
   padding: 10px; */
-  
+  font-size: 12px;
   padding-left: 15px;
   position: absolute;
-  color:#a42323;
+  color:#ffffff;
   text-shadow: 1px 1px 2px rgba(5, 4, 4, 0.129);
   bottom: 0;
   left: 0;
-  width: 90%;
+  width: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -168,7 +170,8 @@ img{
 
 /* Apply border bottom color on hover and focus (click) */
 .searchbar:hover, .searchbar:focus {
-  border-bottom: 1px solid #FC4445; 
+  border-bottom: 1px solid #59afe8; 
+  background: #59afe8;
   
    /* Change the bottom border color on hover or click */
 }
@@ -250,6 +253,7 @@ button .search-button:hover{
 
  .navbar{
    width: 100%;
+
  }
   .video {
     flex-basis: 100%;
@@ -261,5 +265,8 @@ button .search-button:hover{
 }
 .amit{
   display: flex;
-
+ 
+}
+.body{
+  background-color: black;
 }

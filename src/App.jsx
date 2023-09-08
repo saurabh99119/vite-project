@@ -95,8 +95,8 @@ let nextPageNumber = 1;
                   className="video-thumb"
                   src={video.image}
                   alt={video.title}
-                  width="640"
-                  height="360"
+                  // width="640"
+                  // height="360"
                 />
               </Link>
               <p className="duration">{video.duration}</p>
