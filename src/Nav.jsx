@@ -87,7 +87,7 @@ const Navigation = ({handleSearch}) => {
     cursor: "pointer",
     borderRadius: "5px",
     fontSize: "1.2rem",
-    transition: "background-color 0.3s ease",
+    transition: "background-color 0.4s ease",
     outline: "none",
 
   };
