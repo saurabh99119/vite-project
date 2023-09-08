@@ -16,7 +16,7 @@ const Navigation = ({handleSearch}) => {
     justifyContent: "space-between",
     alignItems: "center",
     padding: "10px 20px",
-    backgroundColor: "grey",
+    backgroundColor: "#808080",
     color: "white",
   };
 
