@@ -72,8 +72,9 @@ let nextPageNumber = 1;
   return (
     <>
       <Nav handleSearch={handleSearch} />
+      <div className="amit">
       <iframe
-      style={{ backgroundColor: 'white' }}
+      style={{ backgroundColor: 'rgb(189, 29, 29)' }}
       width="160"
       height="600"
       scrolling="no"
@@ -119,6 +120,7 @@ let nextPageNumber = 1;
             Next Page
           </button>
         </div>
+      </div>
       </div>
     </>
   );
