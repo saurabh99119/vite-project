@@ -16,7 +16,7 @@ const Navigation = ({handleSearch}) => {
     justifyContent: "space-between",
     alignItems: "center",
     padding: "10px 20px",
-    backgroundColor: "linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)",
+    backgroundColor: "grey",
     color: "white",
   };
 
